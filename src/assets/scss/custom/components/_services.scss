@@ -1,0 +1,13 @@
+.services {
+    .line {
+        border-right: 1px solid #d3d3d357;
+        border-bottom: 1px solid #d3d3d357;
+        
+        @include media-breakpoint-down(md) { 
+            border-right: none;
+        }
+        @include media-breakpoint-up(md) { 
+            border-bottom: none;
+        }
+    }
+}

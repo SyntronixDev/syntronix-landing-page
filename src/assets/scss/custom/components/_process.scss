@@ -1,0 +1,145 @@
+.process {
+    &-line {
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 98%;
+            height: 1px;
+            background: #E3E3E3;
+            transform: translateX(-50%);
+            opacity: 0;
+
+            @include media-breakpoint-up(xxl) {
+                opacity: 1;
+            }
+        }
+
+
+    }
+
+    &-box {
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: -14.4%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            background: transparent;
+            border-radius: 50%;
+            border: 1px solid #30373E;
+            opacity: 0;
+            transition: all ease-in-out 0.3s;
+            z-index: 2;
+
+            @include media-breakpoint-down(xxl) {
+                display: none;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: -13.4%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            background: #E3E3E3;
+            border-radius: 50%;
+            transition: all ease-in-out 0.3s;
+            z-index: 2;
+
+            @include media-breakpoint-down(xxl) {
+                display: none;
+            }
+        }
+
+        .inner {
+            padding: 30px;
+            background: #93939394;
+            transition: all ease-in-out 0.3s;
+            z-index: 1;
+            border-radius: 6px;
+
+            span {
+                @include font-size(6rem);
+                color: transparent;
+                font-weight: 700;
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #E3E3E3;
+                display: block;
+            }
+
+            h5 {
+                color: $black;
+                transition: all ease-in-out 0.3s;
+            }
+
+            small {
+                color: $black;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+
+        .process-bg {
+            >img {
+                opacity: 0;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+
+        &:hover,
+        &.active {
+            .inner {
+                background: transparent;
+
+                h5 {
+                    color: $white;
+                }
+
+                small {
+                    color: $white;
+                }
+
+                &:after {
+                    width: 100%;
+                }
+            }
+
+            &:before {
+                opacity: 1;
+            }
+
+            &:after {
+                background: #30373E;
+            }
+
+            .process-bg {
+                >img {
+                    opacity: 1;
+                }
+            }
+
+            h5 {
+                color: $white;
+            }
+
+            small {
+                color: $white;
+            }
+
+            &:after {
+                background: #30373E;
+            }
+
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}

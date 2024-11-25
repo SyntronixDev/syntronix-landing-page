@@ -1,0 +1,15 @@
+.testimonials {
+    &-name {
+        img {
+            width: 50px;
+        }
+    }
+
+    &-card {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .dash {
+        border: 1px dashed lightgray;
+    }
+}

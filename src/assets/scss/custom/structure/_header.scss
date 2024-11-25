@@ -1,0 +1,22 @@
+.navbar {
+
+    &-nav li a {
+        color: $white;
+    }
+
+    @include media-breakpoint-up(lg) {
+        --bs-navbar-nav-link-padding-x: 20px;
+    }
+
+
+    @include media-breakpoint-down(lg) {
+        background-color: rgba(0, 0, 0, .8);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+    }
+}
+.nav-sticky {
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+    transition: all ease-in-out 0.4s;
+    backdrop-filter: blur(3px);
+}   

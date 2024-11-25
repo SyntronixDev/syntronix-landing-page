@@ -1,0 +1,67 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Quazm"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+    @@include("partials/structure/header.html")
+
+    <main class="page-main" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+        @@include("partials/components/hero-text.html")
+
+        @@include("partials/components/chooseus.html")
+
+        @@include("partials/components/services.html")
+
+        @@include("partials/components/portfolio.html")
+
+        @@include("partials/components/team.html")
+
+        @@include("partials/components/pricing.html")
+
+        @@include("partials/components/process.html")
+
+        @@include("partials/components/about.html")
+
+        @@include("partials/components/misson.html")
+
+        @@include("partials/components/testimonials.html")
+
+        @@include("partials/components/feature.html")
+
+        @@include("partials/components/getin.html")
+        
+        @@include("partials/components/blog.html")
+
+        @@include("partials/components/contact.html")
+        
+    </main>
+
+    @@include("partials/structure/footer.html")
+
+    @@include("partials/customizer.html")
+
+    @@include("partials/vendor-scripts.html")
+    <!-- typed js -->
+    <script src="assets/libs/typed.js/typed.umd.js"></script>
+
+    <script>
+    // Typed.js 
+        new Typed('.auto-type', {
+            strings: ['We help startups launch their products', 'Perfect solution for small businesses'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Muli", sans-serif;
+    font-weight: $font-weight-bold;
+    color: $black;
+}
+
+.bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.section-py {
+    padding: 100px 0;
+}
+
+.dark-mod {
+    top: 28%;
+    z-index: 99;
+
+    a {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+.dark-mod i:nth-of-type(1) {
+    animation: mdi-spin 2s infinite linear;
+}
+
+.ltr {
+    font-size: 15px;
+}
+
+@keyframes mdi-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.minvh50 {
+    min-height: 50vh !important;
+}
+
+.typed-cursor {
+    opacity: 0 !important;
+}
+
+.modal-body {
+    iframe {
+        width: 100%;
+    }
+}

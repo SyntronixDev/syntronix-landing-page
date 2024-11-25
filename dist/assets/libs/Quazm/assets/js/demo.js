@@ -1,0 +1,1 @@
+function windowScroll(){var e=document.getElementById("page-header");50<=document.body.scrollTop||50<=document.documentElement.scrollTop?e.classList.add("header-is-sticky"):e.classList.remove("header-is-sticky")}window.addEventListener("scroll",function(e){e.preventDefault(),windowScroll()}),$(".rotate").textrotator({animation:"flipUp",separator:",",speed:2e3});

@@ -1,0 +1,38 @@
+.contact {
+
+    span i {
+        font-size: 13px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    button {
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+
+    .form-control {
+        padding: 0 31px;
+    }
+
+    .textlebal,
+    .texta {
+        padding: 16px 35px;
+    }
+
+    .lables {
+        label {
+            padding: 0.9rem 2.8rem;
+        }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+}

@@ -1,0 +1,22 @@
+.team {
+    &-card {
+        transition: all ease-in-out 0.3s;
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+    &-img {
+        border-radius: 0px 0px 0 104px;
+    }
+    &-icons {
+        right: -40px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .team-card:hover .team-icons {
+        right: 0;
+    }
+    .JoneCooper {
+        background-color: #eef6fb;
+    }
+}

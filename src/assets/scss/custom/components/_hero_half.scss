@@ -1,0 +1,14 @@
+.hero-half {
+  padding: 255px 0;
+}
+
+.hero-half::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0 0 0 / 75%) 0, rgb(0 0 0 / 75%) 0%);
+    z-index: -1;
+}

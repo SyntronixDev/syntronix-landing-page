@@ -1,0 +1,33 @@
+$font-family-sans-serif: "Sora", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$primary: #2ec5ff;
+$body-secondary-color: #9e9cb9;
+$body-color: $body-secondary-color;
+$body-color-dark: #9f9f9f;
+$font-weight-base: 400;
+$secondary: #8574bd;
+$light: #FBFAFD;
+$darkmain: #1a2532;
+$darkseco: #18222e;
+$success: #5a4fdc2e;
+$font-weight-medium: 500;
+$line-height-base: 1.9;
+
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-color: #fff;
+    --bs-btn-hover-bg:#0072ff;
+    --bs-btn-hover-border-color: #0072ff;
+}
+
+$body-bg-dark: #161618;
+$btn-transition: 0.3s ease-in-out;
+$input-btn-padding-y: .8rem;
+$input-btn-padding-x: 2.8rem;
+
+$btn-font-weight: 600;
+$navbar-light-active-color: $primary;
+$navbar-light-hover-color: $primary;
+
+// $link-hover-color-rgb:$primary;

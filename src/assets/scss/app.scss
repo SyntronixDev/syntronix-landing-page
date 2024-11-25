@@ -1,0 +1,156 @@
+/*!
+* Template Name: Quazm - Landing Page Templates
+* Author: BullTheme
+* Version: 1.0.0
+* Website: https://bulltheme.com
+* Contact: imbulltheme@gmail.com
+* File: Main Css File
+*/
+
+// @import "./node_modules/bootstrap/scss/mixins/banner";
+
+
+//Fonts
+@import "custom/fonts/fonts";
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "custom-variable";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/variables-dark";
+@import "./node_modules/bootstrap/scss/mixins";
+
+// Structure
+@import "custom/structure/general";
+@import "custom/structure/header";
+@import "custom/structure/footer";
+
+// Components
+@import 'custom/components/hero';
+@import 'custom/components/chooseus';
+@import 'custom/components/features';
+@import 'custom/components/blog';
+@import 'custom/components/contact';
+@import 'custom/components/team';
+@import 'custom/components/testimonials';
+@import 'custom/components/portfolio';
+@import 'custom/components/services';
+@import 'custom/components/process';
+@import 'custom/components/about';
+@import 'custom/components/getin';
+
+
+@include color-mode(dark) {
+
+    .bg-light {
+        background-color: #161b20 !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+
+    .navbar-nav li a {
+        color: $white;
+    }
+
+    .nav-sticky {
+        background-color: rgba(0, 0, 0, .8);
+        backdrop-filter: blur(3px);
+    }
+
+    .nav-link:hover {
+        color: $primary;
+    }
+
+    .hero-sec form input {
+        background-color: $darkmain;
+    }
+
+    footer {
+        background-color: #14191e;
+
+        a {
+            color: $white;
+            &:hover {
+                color: $primary !important;
+            }
+        }
+    }
+
+    .low-footer {
+        background-color: #141c26;
+    }
+
+    .navbar {
+
+        @include media-breakpoint-down(lg) {
+            background-color: rgba(0, 0, 0, .8);
+            backdrop-filter: blur(3px);
+        }
+
+    }
+
+    .process-box {
+        h5 {
+            color: $white;
+        }
+
+        small {
+            color: $white;
+        }
+    }
+
+    .features-box svg {
+        color: $white;
+    }
+
+    .process-line:after {
+        background: #e3e3e347;
+    }
+
+    .process-box:after {
+        background: #e3e3e38c;
+    }
+
+    .process-box:before {
+        border: 1px solid #969fa9;
+    }
+
+    .testimonials .dash {
+        border: 1px dashed #d3d3d34a;
+    }
+
+    @include media-breakpoint-up(md) {
+        .services .line {
+            border-right: 1px solid rgb(211 211 211 / 15%);
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .services .line {
+            border-bottom: 1px solid rgb(211 211 211 / 15%);
+        }
+    }
+
+    .low-footer.border-top {
+        --bs-border-color: #4950572e;
+    }
+
+    .choose-box {
+        box-shadow: rgb(255 255 255 / 10%) 0 0 5px 0, rgba(0, 0, 0, .1) 0 0 1px 0;
+    }
+    .blog-card {
+        box-shadow: rgb(255 255 255 / 10%) 0 0 5px 0, rgba(0, 0, 0, .1) 0 0 1px 0;
+    }
+    .contact {
+        input,textarea {
+            --bs-border-color: #49505761;
+        }
+    }
+}
