@@ -84,7 +84,7 @@ gulp.task("browsersync", function (callback) {
     server: {
       baseDir: [paths.dist.base.dir, paths.src.base.dir, paths.base.base.dir],
     },
-    startPath: "/index-1.html", // Set the default page here
+   
   });
   callback();
 });
