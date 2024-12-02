@@ -117,15 +117,15 @@
 
 .fa-ul {
   list-style-type: none;
-  margin-left: var(--fa-li-margin, 2.5em);
-  padding-left: 0;
+  margin-right: var(--fa-li-margin, 2.5em);
+  padding-right: 0;
 }
 .fa-ul > li {
   position: relative;
 }
 
 .fa-li {
-  left: calc(-1 * var(--fa-li-width, 2em));
+  right: calc(-1 * var(--fa-li-width, 2em));
   position: absolute;
   text-align: center;
   width: var(--fa-li-width, 2em);
@@ -141,13 +141,13 @@
 }
 
 .fa-pull-left {
-  float: left;
-  margin-right: var(--fa-pull-margin, 0.3em);
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
 }
 
 .fa-pull-right {
-  float: right;
-  margin-left: var(--fa-pull-margin, 0.3em);
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
 }
 
 .fa-beat {
@@ -411,48 +411,48 @@
 }
 @-webkit-keyframes fa-flip {
   50% {
-    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    -webkit-transform: rotate3d(var«-862:1», var«862:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var«-863:1», var«863:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
   }
 }
 @keyframes fa-flip {
   50% {
-    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    -webkit-transform: rotate3d(var«-864:1», var«864:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var«-865:1», var«865:-2», var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
   }
 }
 @-webkit-keyframes fa-shake {
   0% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  4% {
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg);
   }
-  8%, 24% {
-    -webkit-transform: rotate(-18deg);
-            transform: rotate(-18deg);
+  4% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
   }
-  12%, 28% {
+  8%, 24% {
     -webkit-transform: rotate(18deg);
             transform: rotate(18deg);
   }
-  16% {
-    -webkit-transform: rotate(-22deg);
-            transform: rotate(-22deg);
+  12%, 28% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
   }
-  20% {
+  16% {
     -webkit-transform: rotate(22deg);
             transform: rotate(22deg);
   }
-  32% {
-    -webkit-transform: rotate(-12deg);
-            transform: rotate(-12deg);
+  20% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
   }
-  36% {
+  32% {
     -webkit-transform: rotate(12deg);
             transform: rotate(12deg);
+  }
+  36% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
   }
   40%, 100% {
     -webkit-transform: rotate(0deg);
@@ -461,36 +461,36 @@
 }
 @keyframes fa-shake {
   0% {
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
-  }
-  4% {
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg);
   }
-  8%, 24% {
-    -webkit-transform: rotate(-18deg);
-            transform: rotate(-18deg);
+  4% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
   }
-  12%, 28% {
+  8%, 24% {
     -webkit-transform: rotate(18deg);
             transform: rotate(18deg);
   }
-  16% {
-    -webkit-transform: rotate(-22deg);
-            transform: rotate(-22deg);
+  12%, 28% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
   }
-  20% {
+  16% {
     -webkit-transform: rotate(22deg);
             transform: rotate(22deg);
   }
-  32% {
-    -webkit-transform: rotate(-12deg);
-            transform: rotate(-12deg);
+  20% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
   }
-  36% {
+  32% {
     -webkit-transform: rotate(12deg);
             transform: rotate(12deg);
+  }
+  36% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
   }
   40%, 100% {
     -webkit-transform: rotate(0deg);
@@ -503,8 +503,8 @@
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 @keyframes fa-spin {
@@ -513,23 +513,23 @@
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 .fa-rotate-90 {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .fa-rotate-180 {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .fa-rotate-270 {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
 }
 
 .fa-flip-horizontal {
@@ -564,7 +564,7 @@
 
 .fa-stack-1x,
 .fa-stack-2x {
-  left: 0;
+  right: 0;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -10602,5 +10602,7 @@ readers do not read off random characters that represent icons */
 }
 .far,
 .fa-regular {
+  font-weight: 400;
+}fa-regular {
   font-weight: 400;
 }
